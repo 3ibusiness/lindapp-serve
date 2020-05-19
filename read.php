@@ -32,8 +32,7 @@ if (isset($_GET["contact"]) && !empty(trim($_GET["contact"]))) {
                 $result = array('code' => 200, 'contact' => $row["contact"], 'public_key' => $row["public_key"]);
 
             } else {
-                $result = array('code' => 404, 'message' => 'Something went wrong. Please try again later. '.$contact);
-                exit();
+                $result = array('code' => 404, 'message' => 'Something went wrong. Please try again later. '.$param_contact);
             }
 
         } else {
